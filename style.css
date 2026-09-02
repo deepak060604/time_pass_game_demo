@@ -76,7 +76,22 @@ body{
   display: none;
 }
 
-p {
-    font-family: "Caveat", cursive;
-    font-size: 24px;
+
+
+.moving-text {
+     position: fixed;
+    bottom: 10px;
+    left: 0;
+    white-space: nowrap;
+    animation: moveRight 8s linear infinite;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
 }
